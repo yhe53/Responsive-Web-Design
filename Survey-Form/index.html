@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Job Seeker Survey Form</h1>
+    <p id="description">Thank you for taking this survey!</p>
+    <form id="survey-form">
+      <div>
+        <label id="name-label">
+          Name
+          <input id="name" type="text" placeholder="name" required>
+        </label>
+      </div>
+      <div>
+        <label id="email-label">
+          Email
+          <input id="email" type="email" placeholder="email" required>
+        </label>
+      </div>
+      <div>
+        <label id="number-label">
+          Age
+          <input id="number" type="number" placeholder="age" min=18 max=65>
+        </label>
+      </div>
+      <div>
+        <label>Gender</label>
+        <label>
+          Male
+          <input type="radio" value="male" name="gender">
+        </label>
+        <label>
+          Female
+          <input type="radio" value="female" name="gender">
+        </label>
+      </div>
+      <div>
+        <label>
+          Education Level
+          <select id="dropdown">
+            <option>(select one)</option>
+            <option>High School</option>
+            <option>Bachelor's degree</option>
+            <option>Master's degree</option>
+            <option>PhD</option>
+          </select>
+        <label>
+      </div>
+      <div>
+        <label>What are your areas of interest in software engineering?
+        </label>
+        <div>
+          <label>
+            <input type="checkbox" value="frontend">
+            Front-End
+          </label>
+          <label>
+            <input type="checkbox" value="backend">
+            Back-End
+          </label>
+          <label>
+            <input type="checkbox" value="fullstack">
+            Full-Stack
+          </label>
+      </div>
+      <div>
+        <label>Additional Comments</label>
+        <textarea type="text" cols=36 rows=12></textarea>
+      </div>
+      <button type="submit" id="submit">
+        Submit
+      </button>
+    </form>
+	</body>
+</html>
